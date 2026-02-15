@@ -1,0 +1,36 @@
+@charset "UTF-8";
+body{
+    font-family: 'Arial';
+    background-color:#121212;
+    color: white;
+}
+a{
+    color: #4da3ff;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 4px 6px;
+}
+a:hover{
+    color: #0b5ed7;
+    text-decoration: underline;
+}
+nav{
+    margin: 10px;
+}
+#imagem{
+    background-color: #04173c;
+    width: 250px;
+    padding: 10px;
+    border-radius: 35px;
+    margin-left: 10px;
+}
+main{
+    width: 400px;
+    text-align: left;
+    
+    padding: 5px;
+    margin: 10px;
+    height: 200px;
+    font-weight: bold;
+    border-radius: 20px;
+}
