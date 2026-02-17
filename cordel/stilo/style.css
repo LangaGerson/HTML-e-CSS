@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'Passion One';
+    src: url(../fontes/PassionOne-Regular.ttf);
+}
+@font-face {
+    font-family:'Sriracha';
+    src: url(../fontes/Sriracha-Regular.ttf);
+}
+*{
+    margin:0px;
+}
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+header{
+    background-color: black;
+    height: 180px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+a:hover{
+    color: rgba(255, 255, 255, 0.375);
+}
+
+#titulo{
+    padding-top:25px;
+    padding-bottom: 19px;
+    font-size: 50px;
+    font-family: var(--fonte1);
+}
+#assinatura{
+    margin: 20px;
+}
+
+.imagem{
+    font-size:calc(1rem + 1vw) ;
+    font-family: var(--fonte3);
+    margin-bottom: 100px;
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow:1px 1px black;
+
+    
+}
+.normal{
+    font-size:calc(1rem + 1vw) ;;
+    font-family: var(--fonte3);
+    margin-bottom: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#image1{
+    background-image: url(../imagens/schwoaze-ladybug-3475779_1920.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    
+}
+#image2{
+    background-image: url(../imagens/nile-paper-623167_1920.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+p{ 
+    padding: 20px;
+    width: 330px;
+    line-height: 2em;
+    font-weight: bold;
+    text-align: left;
+    
+}
+footer{
+    background-color: black;
+    color:white ;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte1);
+    font-weight:lighter;
+}
