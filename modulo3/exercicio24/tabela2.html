@@ -19,45 +19,72 @@
         padding: 10px;
         
     }
+
     thead{
         background-color: grey;
         color:white
+    }
+    .num{
+        text-align: right;
     }
     tfoot{
         background-color: grey;
         color:white
 
     }
+    caption{
+        background-color: lightgrey;
+        font-weight: 600;
+        padding: 10px;
+    }
     
     </style>
 </head>
 <body>
+    <h1>Usao de Tabelas</h1>
     <table>
+        <caption>População Brasileira</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>populacao</th>
+                <th scope="col">Estado</th>
+                <th scope="col">populacao</th>
             </tr>
 
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45 909 302</td>
+                <td class="num">45 909 302</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>73 929 391</td>
+                <td class="num">73 929 391</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>32 789 437</td>
+                <td class="num">32 789 437</td>
+            </tr>
+            <tr>
+                <td>Brasilia</td>
+                <td class="num">43 908 984</td>
+            </tr>
+            <tr>
+                <td>Rio grande </td>
+                <td class="num">22 678 598</td>
+            </tr>
+            <tr>
+                <td>Guanabara</td>
+                <td class="num">13 009 321</td>
+            </tr>
+            <tr>
+                <td>Cabo Delgado</td>
+                <td class="num">12 756 838</td>
             </tr>
 
         </tbody>
         <tfoot>
-            <th>Total da populacao</th>
-            <td>0000</td>
+            <th scope="row">Total da populacao</th>
+            <td class="num">390 047 384</td>
 
         </tfoot>
     </table>
