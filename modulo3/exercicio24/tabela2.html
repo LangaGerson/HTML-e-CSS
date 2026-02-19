@@ -10,19 +10,29 @@
 
     }
     table{
-        width: 500px;
+        width: 327px;
         border-collapse: collapse;
+        position: relative;
 
     }
-    td,th{
+    table tr:nth-child(2n){
+        background-color: rgb(125, 125, 125);
+
+    }
+
+    caption,td,th{
         border: 1px solid black;
         padding: 10px;
         
     }
 
     thead{
-        background-color: grey;
+        background-color: rgb(50, 50, 50);
         color:white
+    }
+    #numeros{
+        width: 100px;
+
     }
     .num{
         text-align: right;
@@ -36,6 +46,12 @@
         background-color: lightgrey;
         font-weight: 600;
         padding: 10px;
+
+    }
+    thead > tr > th{
+        position: sticky;
+        top: -1px;
+        background-color:  rgb(50, 50, 50);
     }
     
     </style>
@@ -43,11 +59,11 @@
 <body>
     <h1>Usao de Tabelas</h1>
     <table>
-        <caption>População Brasileira</caption>
+        <caption>População Nacional</caption>
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col">populacao</th>
+                <th scope="col" id="numeros">População</th>
             </tr>
 
         </thead>
@@ -80,14 +96,47 @@
                 <td>Cabo Delgado</td>
                 <td class="num">12 756 838</td>
             </tr>
+                <td>Manica</td>
+                <td class="num">1 890 283</td>
+            </tr>
+            <tr>
+                <td>Tete</td>
+                <td class="num">12 456 789</td>
+            </tr>
+            <tr>
+                <td>Maputo Cidade</td>
+                <td class="num">13 295 930</td>
+            </tr>
+            <tr>
+                <td>Maputo Provincia</td>
+                <td class="num">23 485 775
+            </tr>
+            <tr>
+                <td>Sofala</td>
+                <td class="num">15227362</td>
+            </tr>
+            <tr>
+                <td>Zambézia</td>
+                <td class="num">18 928 918</td>
+            </tr>
+            <tr>
+                <td>Niassa</td>
+                <td class="num">8 909 026</td>
+            </tr>
+            <tr>
+                <td>Nampula</td>
+                <td class="num">45 279 182</td>
+            </tr>
 
         </tbody>
         <tfoot>
-            <th scope="row">Total da populacao</th>
-            <td class="num">390 047 384</td>
+            <th scope="row">Total da população</th>
+            <td class="num">590 047 384</td>
 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequatur saepe nam sint itaque, vero veritatis dolorem eveniet repellat voluptatem voluptas pariatur velit modi beatae ducimus ad doloremque provident tenetur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi quasi magnam quo, enim quidem amet dignissimos id vel asperiores voluptatum fugit esse adipisci et consequuntur magni tempore, totam quos. Animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat possimus vero illum, dignissimos magni molestias obcaecati, adipisci perferendis, saepe numquam quo eos? Sunt assumenda quos ad. Recusandae voluptate dignissimos architecto?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero necessitatibus nihil voluptatibus eligendi, illum alias iste veritatis assumenda voluptas minima obcaecati dolores odit maiores? Veritatis eos dignissimos impedit minima?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequatur saepe nam sint itaque, vero veritatis dolorem eveniet repellat voluptatem voluptas pariatur velit modi beatae ducimus ad doloremque provident tenetur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi quasi magnam quo, enim quidem amet dignissimos id vel asperiores voluptatum fugit esse adipisci et consequuntur magni tempore, totam quos. Animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat possimus vero illum, dignissimos magni molestias obcaecati, adipisci perferendis, saepe numquam quo eos? Sunt assumenda quos ad. Recusandae voluptate dignissimos architecto?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero necessitatibus nihil voluptatibus eligendi, illum alias iste veritatis assumenda voluptas minima obcaecati dolores odit maiores? Veritatis eos dignissimos impedit minima?</p>    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequatur saepe nam sint itaque, vero veritatis dolorem eveniet repellat voluptatem voluptas pariatur velit modi beatae ducimus ad doloremque provident tenetur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi quasi magnam quo, enim quidem amet dignissimos id vel asperiores voluptatum fugit esse adipisci et consequuntur magni tempore, totam quos. Animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat possimus vero illum, dignissimos magni molestias obcaecati, adipisci perferendis, saepe numquam quo eos? Sunt assumenda quos ad. Recusandae voluptate dignissimos architecto?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero necessitatibus nihil voluptatibus eligendi, illum alias iste veritatis assumenda voluptas minima obcaecati dolores odit maiores? Veritatis eos dignissimos impedit minima?</p>    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequatur saepe nam sint itaque, vero veritatis dolorem eveniet repellat voluptatem voluptas pariatur velit modi beatae ducimus ad doloremque provident tenetur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi quasi magnam quo, enim quidem amet dignissimos id vel asperiores voluptatum fugit esse adipisci et consequuntur magni tempore, totam quos. Animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat possimus vero illum, dignissimos magni molestias obcaecati, adipisci perferendis, saepe numquam quo eos? Sunt assumenda quos ad. Recusandae voluptate dignissimos architecto?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero necessitatibus nihil voluptatibus eligendi, illum alias iste veritatis assumenda voluptas minima obcaecati dolores odit maiores? Veritatis eos dignissimos impedit minima?</p>    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequatur saepe nam sint itaque, vero veritatis dolorem eveniet repellat voluptatem voluptas pariatur velit modi beatae ducimus ad doloremque provident tenetur! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi quasi magnam quo, enim quidem amet dignissimos id vel asperiores voluptatum fugit esse adipisci et consequuntur magni tempore, totam quos. Animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat possimus vero illum, dignissimos magni molestias obcaecati, adipisci perferendis, saepe numquam quo eos? Sunt assumenda quos ad. Recusandae voluptate dignissimos architecto?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero necessitatibus nihil voluptatibus eligendi, illum alias iste veritatis assumenda voluptas minima obcaecati dolores odit maiores? Veritatis eos dignissimos impedit minima?</p>
     
 </body>
 </html>
