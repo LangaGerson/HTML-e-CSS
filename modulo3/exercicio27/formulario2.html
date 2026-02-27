@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo formulario</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="ola.php" method="post" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nomes" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" step="0.5" required >
+        </p>
+        <p>
+            <label for="idata">Data da media:</label>
+            <input type="month" name="data" id="idata">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
