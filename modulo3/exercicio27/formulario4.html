@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="ola.php">
+        <fieldset>
+            <legend>Género</legend>
+            <input type="radio" name="sexo" id="imasc" checked><label for="imasc">Masculino</label>
+            <input type="radio" name="sexo" id="ifem"><label for="ifem">Femenino</label>
+        </fieldset>
+    </form>
+
+    <form action="ola.php" method="get">
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="fut" id="ifot"><label for="ifot">Futebol</label> <br>
+            <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label><br>
+            <input type="checkbox" name="nat" id="inat"><label for="inat">Natação</label><br>
+            <input type="checkbox" name="ten" id="iten"><label for="iten">Ténis</label><br>
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset">
+
+        </p>
+    </form>
+    
+</body>
+</html>
