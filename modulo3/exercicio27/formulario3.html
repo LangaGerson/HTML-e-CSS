@@ -7,9 +7,20 @@
 </head>
 <body>
     <form action="ola.php">
-        <p>
-            
-        </p>
+        <div>
+            <label for="imail">E-mail:</label>
+            <input type="email" name="emails" id="imail" required autocomplete="email" >
+        </div>
+        <div>
+            <Label for="itel">Telefone:</Label>
+            <input type="tel" required pattern="![0-9]{4}-[0-9]{4}$">
+        </div>
+        <div>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Apagar">
+            </p>
+        </div>
     </form>
 
     
