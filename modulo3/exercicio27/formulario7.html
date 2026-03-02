@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest">
+                <optgroup label="Região Sul">
+                    <option value="MP">M. Província</option>
+                    <option value="MC" selected>M. Cidade</option>
+                </optgroup>
+                <optgroup label="Regia Centro">
+                    <option value="GZ">Gaza</option>
+                    <option value="SF">Sofala</option>
+                    <option value="TT">Tete</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="pro" id="iprof" list="lstprof" >
+            <datalist id="lstprof">
+                <option value="
+                cont">Contabilista</option>
+                <option value="adm">Administrador</option>
+                <option value="anl">Analista</option>
+                <option value="med">Médico</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="">Mensagem</label><br>
+            <textarea name="" id="" placeholder="Digite a Mensagem"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
