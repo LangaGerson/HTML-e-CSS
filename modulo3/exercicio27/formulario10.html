@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="ola.php">
+        <label for="iano">Em que ano voce nasceu?</label>
+        <input type="number" name="ano" id="iano" min="1900" max="2026" value="2000"
+        oninput="calcIdade()">
+
+        <label for="iidade">Sua idade é:</label>
+        <output id="iidade">0</output>
+
+    </form>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
+    </p>
+    <script>
+        function calcIdade(){
+            let actual = new Date().getFullYear()
+            iidade.innertHTML = Number(actual) - Number(iano.value)
+        }
+    </script>
+    
+</body>
+</html>
