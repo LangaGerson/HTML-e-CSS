@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* Estilos para imprensora */
+*{
+    margin: 10px;
+    padding: 10px;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+    font-size: 1.5;
+}
+menu{
+    display: none;
+}
+article::after{
+    content: 'Este site artigo foi impresso pelo site project';
+}
