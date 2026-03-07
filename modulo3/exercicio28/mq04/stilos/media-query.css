@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* Todas as demais medias */ 
+
+/* Tipical mobile breakpoints 
+-------------------------------------
+Pequenas telas:Até 600px
+Telas de celular:600px até 768px
+Telas de Tablet: 768px ate 992px
+Telas de Desktop:942px ate 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print {
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+
+    }
+    
+}
+@media screen and (min-width: 568px) and (max-width: 992px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{display:none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+    img{
+    display: block;
+    margin:auto;
+}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) { 
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{display:none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+    img{
+    display: block;
+    margin:auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px;
+    }
+    img#phone{display:none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none ;}
+    img#tv{display: block;}
+    img{
+    display: block;
+    margin:auto;
+    }
+}
